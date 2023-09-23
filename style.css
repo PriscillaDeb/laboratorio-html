@@ -55,4 +55,9 @@ hr {
 .item {
     padding:16px;
     text-align: center;
+    
+}
+
+.borde-redondeado{
+ border-radius: 25px;
 }
