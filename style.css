@@ -9,23 +9,20 @@ html, body, head{
     max-width:100%;
     margin: 8px;
     padding: 16px 32px;
-  
 }
+
+
 
 .navmenu{
     display:flex;
     position: fixed;
     width:100%;
-}
-
-.navmenu{
-
     color:#212429;
     font-size: 16px;
     padding: px;
     list-style: none;
     justify-content: center;
-    top: 0px;
+    top: 8px;
     background-color: #fff;
 }
 
@@ -41,27 +38,39 @@ a:hover{
     color:cadetblue
 }
 
-
-hr {
-  border: 1px solid #000; 
-  margin: 8px; 
-}
-
 .grid-container{
     width: 100%;
-    padding:16px;
+    padding: 16px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 16px;
-    justify-content: center;
+    gap: 8px;
+    justify-content: space-between;
 }
+
 
 .item {
     padding:16px;
     text-align: center;
-    
 }
 
 .borde-redondeado{
  border-radius: 25px;
 }
+
+.nav-icon{
+    display:flex;
+    position:fixed;
+    width:100%;
+    color:#212429;
+    list-style: none;
+    justify-content:end ;
+    top: 0px;
+    left: 8px;
+}
+
+hr {
+    border: none; 
+    background-color:  #000; 
+    height: 1px;
+    margin: 0px;
+  }
