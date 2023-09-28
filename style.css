@@ -2,13 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 *{
+    margin: 0px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-html, body, head{
+
+html, body{
     max-width:100%;
     margin: 8px;
     padding: 16px 32px;
+}
+
+header{
+    border-bottom: 1px solid black;
+    padding: 16px;
 }
 
 h1{
@@ -18,16 +25,22 @@ h1{
 
 .navmenu{
     display:flex;
-    position: fixed;
     width:100%;
     color:#212429;
     font-size: 16px;
-    padding: px;
     list-style: none;
     justify-content: center;
-    top: 8px;
     background-color: #fff;
 }
+
+@media(max-width: 920px){
+    .navmenu{
+        display: none;
+    }
+    .nav-icon{
+        display: none;
+    }
+    }
 
 a {
     text-decoration: none;
@@ -47,8 +60,7 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 8px;
-    justify-content: space-between;
-    position: fixed;
+    justify-content: space-between;    
 }
 
 
@@ -63,25 +75,15 @@ a:hover{
 
 .nav-icon{
     display:flex;
-    position: absolute;
     width:100%;
     color:#212429;
     list-style: none;
-    justify-content:end ;
+    justify-content: end;
     top: 0px;
-    left: -100px;
 }
 
 .menu-icon{
-    position: absolute;
+
     top: 16px;
     left: 100px;
 }
-
-hr {
-    border: none; 
-    background-color:  #000; 
-    height: 1px;
-    margin: 16px;
-    top: 8px;
-  }
